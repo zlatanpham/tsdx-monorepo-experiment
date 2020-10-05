@@ -1,0 +1,44 @@
+{
+  "name": "@sajari-dev/react-components",
+  "version": "0.0.0",
+  "description": "TBD",
+  "repository": {
+    "type": "git",
+    "directory": "packages/components"
+  },
+  "scripts": {
+    "start": "tsdx watch --tsconfig tsconfig.build.json --verbose --noClean",
+    "build": "tsdx build --tsconfig tsconfig.build.json",
+    "test": "tsdx test",
+    "lint": "tsdx lint",
+    "prepublish": "yarn build"
+  },
+  "main": "dist/index.js",
+  "module": "dist/react-components.esm.js",
+  "typings": "dist/index.d.ts",
+  "files": [
+    "README.md",
+    "dist"
+  ],
+  "peerDependencies": {
+    "react": "^16.8.0",
+    "react-dom": "^16.8.0",
+    "emotion-theming": "> 10",
+    "@emotion/core": "> 10",
+    "@emotion/styled": "> 10"
+  },
+  "devDependencies": {
+    "twin.macro": "^1.9.0",
+    "@tailwindcss/ui": "^0.6.2",
+    "tailwindcss": "^1.8.10",
+    "emotion-theming": "^10.0.10",
+    "@emotion/core": "^10.0.10",
+    "@emotion/styled": "^10.0.10"
+  },
+  "dependencies": {
+    "tslib": "^2.0.0"
+  },
+  "publishConfig": {
+    "access": "public"
+  }
+}
