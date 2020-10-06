@@ -1,0 +1,13 @@
+{
+  "plugins": [
+    [
+      "import",
+      {
+        "libraryName": "@sajari-dev/react-sdk",
+        "libraryDirectory": "dist",
+        "camel2DashComponentName": false
+      },
+      "@sajari-dev/react-sdk"
+    ]
+  ]
+}

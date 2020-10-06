@@ -7,14 +7,14 @@
     "directory": "packages/sdk"
   },
   "scripts": {
-    "start": "tsdx watch --tsconfig tsconfig.build.json --verbose --noClean",
+    "start": "tsdx watch --tsconfig tsconfig.build.json --verbose --noClean yalc publish",
     "build": "tsdx build --tsconfig tsconfig.build.json",
     "test": "tsdx test",
     "lint": "tsdx lint",
     "prepublish": "yarn build"
   },
   "main": "dist/index.js",
-  "module": "dist/react-sdk.esm.js",
+  "module": "dist/index.esm.js",
   "typings": "dist/index.d.ts",
   "files": [
     "README.md",
@@ -25,8 +25,9 @@
     "react-dom": "^16.8.0"
   },
   "dependencies": {
-    "@sajari-dev/react-hooks": "^0.0.0",
     "@sajari-dev/react-components": "^0.0.0",
+    "@sajari-dev/react-hooks": "^0.0.0",
+    "@sajari-dev/react-sdk": "file:.yalc/@sajari-dev/react-sdk",
     "tslib": "^2.0.0"
   },
   "publishConfig": {
