@@ -13,6 +13,6 @@
     "preserveConstEnums": true,
     "sourceMap": true,
     "lib": ["dom", "esnext"],
-    "types": ["node"]
+    "types": ["jest", "node"]
   }
 }

@@ -4,6 +4,11 @@
   "devDependencies": {
     "@types/react": "^16.9.43",
     "@types/react-dom": "^16.9.8",
+    "@types/jest": "^26.0.14",
+    "@testing-library/dom": "^7.24.4",
+    "@testing-library/jest-dom": "^5.11.4",
+    "@testing-library/react": "^11.0.4",
+    "jest": "^26.5.0",
     "lerna": "^3.15.0",
     "react": "^16.13.1",
     "react-dom": "^16.13.1",
@@ -16,7 +21,7 @@
   "scripts": {
     "lerna": "lerna",
     "start": "lerna run start --stream --parallel",
-    "test": "lerna run test --",
+    "test": "lerna exec -- yarn test",
     "build": "lerna run build",
     "prepublish": "lerna run prepublish"
   },
