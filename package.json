@@ -16,14 +16,16 @@
     "typescript": "^3.9.7"
   },
   "workspaces": [
-    "packages/*"
+    "packages/*",
+    "docs"
   ],
   "scripts": {
     "lerna": "lerna",
     "start": "lerna run start --stream --parallel",
-    "test": "lerna exec -- yarn test",
+    "test": "lerna exec --scope={@sajari-dev/react-components,@sajari-dev/react-hooks,@sajari-dev/react-sdk} -- yarn test",
     "build": "lerna run build",
-    "prepublish": "lerna run prepublish"
+    "prepublish": "lerna run prepublish",
+    "docs": "lerna exec --scope=@sajari-dev/sdk-docs -- yarn dev"
   },
   "prettier": {
     "trailingComma": "es5",
