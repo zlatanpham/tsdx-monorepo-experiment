@@ -1,12 +1,7 @@
+const base = require('./jest.config.base.js');
+
 module.exports = {
-  transform: {
-    '^.+\\.[jt]sx?$': '<rootDir>/jest-preprocess.js',
-  },
-  setupFilesAfterEnv: ['<rootDir>/jest.setup.ts'],
-  globals: {
-    'ts-jest': {
-      diagnostics: false,
-    },
-  },
-  roots: ['packages/'],
+  ...base,
+  projects: ['<rootDir>/packages/*/jest.config.js'],
+  coverageDirectory: '<rootDir>/coverage/',
 };

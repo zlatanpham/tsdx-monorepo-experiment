@@ -1,18 +1,21 @@
 import * as React from 'react';
-import { act, fireEvent, render } from '@testing-library/react';
+import { fireEvent, render } from '@testing-library/react';
 import Input from '../index';
+import ThemeProvider from '../../styles/theming';
 
 describe('Search', () => {
   test('Should handle onChange correctly', () => {
     const onChangeSpy = jest.fn();
-    const { container } = render(<Input value="" onChange={onChangeSpy} />);
+    const { container } = render(
+      <ThemeProvider>
+        <Input value="" onChange={onChangeSpy} />
+      </ThemeProvider>
+    );
 
     const input = container.querySelector('input');
 
-    act(() => {
-      fireEvent.keyDown(input!, { key: 'Escape', code: 27, charCode: 27 });
-    });
+    fireEvent.change(input!, { target: { value: 'hello' } });
     expect(onChangeSpy).toBeCalledTimes(1);
-    expect(onChangeSpy).toHaveBeenLastCalledWith('');
+    expect(onChangeSpy).toHaveBeenLastCalledWith('hello');
   });
 });
