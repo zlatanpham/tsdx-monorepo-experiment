@@ -18,7 +18,7 @@ export default function useInputStyles(props: UseInputStyleProps) {
   const styles: (TwStyle | string)[] = [];
 
   styles.push(
-    tw`text-gray-700 border-gray-300 border border-solid rounded-full bg-white outline-none px-3 py-2 text-base leading-normal pl-10`
+    tw`text-gray-700 border-gray-300 border border-solid rounded-full bg-white outline-none px-3 py-2 text-base leading-normal pl-10`,
   );
 
   styles.push(`&:focus{box-shadow: 0 0 0 3px ${theme.color.primary.outline};}`);
@@ -32,9 +32,7 @@ export default function useInputStyles(props: UseInputStyleProps) {
   }
 
   if (disabled) {
-    styles.push(
-      tw`text-gray-400 bg-gray-100 border-gray-200 focus:border-gray-200 focus:shadow-none`
-    );
+    styles.push(tw`text-gray-400 bg-gray-100 border-gray-200 focus:border-gray-200 focus:shadow-none`);
 
     if (['radio', 'checkbox'].includes(type)) {
       styles.push(tw`checked:bg-gray-400 checked:border-gray-400`);
@@ -42,9 +40,7 @@ export default function useInputStyles(props: UseInputStyleProps) {
   }
 
   if (invalid) {
-    styles.push(
-      tw`border-red-500 focus:border-red-500 focus:shadow-outline-red`
-    );
+    styles.push(tw`border-red-500 focus:border-red-500 focus:shadow-outline-red`);
 
     if (['radio', 'checkbox'].includes(type)) {
       styles.push(tw`bg-red-100 checked:bg-red-500`);

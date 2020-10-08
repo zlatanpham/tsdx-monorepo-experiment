@@ -10,13 +10,7 @@ interface InputProps {
 const Input = ({ onChange, value }: InputProps) => {
   const styles = useInputStyles({ type: 'text' });
 
-  return (
-    <input
-      value={value}
-      onChange={e => onChange(e.target.value)}
-      css={styles}
-    />
-  );
+  return <input value={value} onChange={e => onChange(e.target.value)} css={styles} />;
 };
 
 export default Input;

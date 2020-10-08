@@ -1,12 +1,10 @@
 const SEO = {
   title: 'Sajari SDK | Design System built with React',
-  description:
-    'Simple, Modular and Accessible UI Components for React Applications. Built with Tailwind.',
+  description: 'Simple, Modular and Accessible UI Components for React Applications. Built with Tailwind.',
   openGraph: {
     url: 'https://sajari.com',
     title: 'Sajari SDK',
-    description:
-      'Simple, Modular and Accessible UI Components for React Applications. Built with Tailwind.',
+    description: 'Simple, Modular and Accessible UI Components for React Applications. Built with Tailwind.',
     /* images: [
       {
         url: 'https://res.cloudinary.com/adebayosegun/image/upload/v1567591645/Sajari%20UI/og-image.png',

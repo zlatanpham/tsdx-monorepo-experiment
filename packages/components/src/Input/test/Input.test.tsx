@@ -9,7 +9,7 @@ describe('Search', () => {
     const { container } = render(
       <ThemeProvider>
         <Input value="" onChange={onChangeSpy} />
-      </ThemeProvider>
+      </ThemeProvider>,
     );
 
     const input = container.querySelector('input');

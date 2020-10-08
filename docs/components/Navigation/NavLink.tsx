@@ -24,7 +24,10 @@ const NavLink = (props: NavLinkProps) => {
 };
 
 export const stringToUrl = (str = '', path = '/') => {
-  return `${path}${str.toLowerCase().split(' ').join('-')}`;
+  return `${path}${str
+    .toLowerCase()
+    .split(' ')
+    .join('-')}`;
 };
 
 export const SideNavLink = forwardRef((props: LinkProps, ref?: React.Ref<HTMLAnchorElement>) => {

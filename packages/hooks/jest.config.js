@@ -4,10 +4,7 @@ const base = require('../../jest.config.base.js');
 module.exports = {
   ...base,
   rootDir: '../..',
-  testMatch: [
-    `<rootDir>/packages/hooks/**/*.test.ts`,
-    `<rootDir>/packages/hooks/**/*.test.tsx`,
-  ],
+  testMatch: [`<rootDir>/packages/hooks/**/*.test.ts`, `<rootDir>/packages/hooks/**/*.test.tsx`],
   name: '@sajari-dev/react-hooks',
   displayName: 'hooks',
 };

@@ -32,9 +32,7 @@ export const liveEditorStyle = {
   padding: 0,
 };
 
-const CopyButton = (props: CodeCopyButtonProps) => (
-  <CodeCopyButton margin={['mt-4', 'mr-4']} {...props} />
-);
+const CopyButton = (props: CodeCopyButtonProps) => <CodeCopyButton margin={['mt-4', 'mr-4']} {...props} />;
 
 // @ts-ignore
 const LiveCodePreview = props => (
@@ -51,9 +49,7 @@ const LiveCodePreview = props => (
 );
 
 // @ts-ignore
-const LiveCodeError = props => (
-  <LiveError className="px-3 py-2 text-white bg-red-500 text-code" {...props} />
-);
+const LiveCodeError = props => <LiveError className="px-3 py-2 text-white bg-red-500 text-code" {...props} />;
 
 const EditableNotice = () => (
   <Box
@@ -93,17 +89,9 @@ interface CodeBlockProps {
 }
 
 const CodeBlock = (props: CodeBlockProps) => {
-  const {
-    className = '',
-    live = true,
-    manual = false,
-    render = false,
-    children,
-    ...rest
-  } = props;
+  const { className = '', live = true, manual = false, render = false, children, ...rest } = props;
   const [editorCode, setEditorCode] = useState(children.trim());
-  const language =
-    (className && (className.replace(/language-/, '') as Language)) || 'jsx';
+  const language = (className && (className.replace(/language-/, '') as Language)) || 'jsx';
   const { onCopy, hasCopied } = useClipboard(editorCode);
 
   const liveProviderProps = {
@@ -138,12 +126,7 @@ const CodeBlock = (props: CodeBlockProps) => {
               {hasCopied ? 'Copied!' : 'Copy'}
             </CopyButton>
             {/* @ts-ignore padding works but isn't in types?! */}
-            <LiveEditor
-              onChange={handleCodeChange}
-              style={liveEditorStyle}
-              padding={20}
-              className="rounded-b-md"
-            />
+            <LiveEditor onChange={handleCodeChange} style={liveEditorStyle} padding={20} className="rounded-b-md" />
           </Box>
         </Box>
       </LiveProvider>
@@ -167,11 +150,7 @@ const CodeBlock = (props: CodeBlockProps) => {
           {hasCopied ? 'Copied!' : 'Copy'}
         </CopyButton>
         {/* @ts-ignore padding works but isn't in types?! */}
-        <LiveEditor
-          style={liveEditorStyle}
-          padding={20}
-          className="rounded-md"
-        />
+        <LiveEditor style={liveEditorStyle} padding={20} className="rounded-md" />
       </Box>
     </LiveProvider>
   );

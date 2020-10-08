@@ -6,13 +6,7 @@ import { SideNavLink, stringToUrl } from './NavLink';
 
 const topNavLinks = [['Getting Started', '/'], ['Examples']];
 
-const hooksNavLinks = [
-  'useQuery',
-  'usePagination',
-  'useFilter',
-  'useSorting',
-  'usePageSize',
-];
+const hooksNavLinks = ['useQuery', 'usePagination', 'useFilter', 'useSorting', 'usePageSize'];
 
 const compositionsLinks = [
   'SearchInput',
@@ -25,9 +19,7 @@ const compositionsLinks = [
   'ViewType',
 ];
 
-const NavGroupHeading = (props: HeadingProps) => (
-  <Heading size="xs" as="h2" margin="mb-2" {...props} />
-);
+const NavGroupHeading = (props: HeadingProps) => <Heading size="xs" as="h2" margin="mb-2" {...props} />;
 
 export const SideNavContent = () => (
   <>
@@ -72,13 +64,7 @@ export const SideNavContent = () => (
 );
 
 const SideNav = (props: BoxProps) => (
-  <Box
-    position="fixed"
-    offset={['inset-x-0', 'top-0']}
-    display={['hidden', 'md:block']}
-    height="h-full"
-    width="w-72"
-  >
+  <Box position="fixed" offset={['inset-x-0', 'top-0']} display={['hidden', 'md:block']} height="h-full" width="w-72">
     <Box
       margin="mt-16"
       position="relative"
@@ -87,13 +73,7 @@ const SideNav = (props: BoxProps) => (
       borderColor="border-gray-200"
       {...props}
     >
-      <Box
-        as="nav"
-        height="h-(screen-16)"
-        aria-label="Main navigation"
-        fontSize="text-sm"
-        padding="p-6"
-      >
+      <Box as="nav" height="h-(screen-16)" aria-label="Main navigation" fontSize="text-sm" padding="p-6">
         <SideNavContent />
       </Box>
     </Box>
