@@ -27,11 +27,17 @@
     "test": "lerna exec --scope={@sajari-dev/react-components,@sajari-dev/react-hooks,@sajari-dev/react-sdk} -- yarn test",
     "build": "lerna run build --scope={@sajari-dev/react-components,@sajari-dev/react-hooks,@sajari-dev/react-sdk}",
     "prepublish": "lerna run prepublish",
-    "docs": "lerna exec --scope=@sajari-dev/sdk-docs -- yarn dev"
+    "docs": "lerna exec --scope=@sajari-dev/sdk-docs -- yarn dev",
+    "format": "prettier -c --write \"*/**\""
   },
-  "prettier": {
-    "trailingComma": "es5",
-    "singleQuote": true,
-    "semi": true
+  "husky": {
+    "hooks": {
+      "pre-commit": "lint-staged"
+    }
+  },
+  "lint-staged": {
+    "*.{js,json,yml,yaml,css,scss,ts,tsx,md}": [
+      "prettier --write"
+    ]
   }
 }
