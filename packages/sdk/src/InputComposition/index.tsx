@@ -1,6 +1,6 @@
 import * as React from 'react';
-import { Input } from '@sajari-dev/react-components';
-import { useQuery } from '@sajari-dev/react-hooks';
+import { Input } from '@sajari/react-components';
+import { useQuery } from '@sajari/react-hooks';
 
 const InputComposition = () => {
   const { query, setQuery } = useQuery();
@@ -8,11 +8,10 @@ const InputComposition = () => {
   return (
     <>
       <Input value={query} onChange={setQuery} />
-      {' '}
-      <br />
-      Value:
-      {' '}
-      {query}
+      <div>
+        Value:
+        {query}
+      </div>
     </>
   );
 };

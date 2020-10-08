@@ -1,1 +1,1 @@
-# @sajari-dev/react-components
+# @sajari/react-components

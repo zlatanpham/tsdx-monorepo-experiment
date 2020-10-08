@@ -1,1 +1,1 @@
-# @sajari-dev/react-hooks
+# @sajari/react-hooks

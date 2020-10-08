@@ -1,8 +1,8 @@
 import { mdx } from '@mdx-js/react';
 
-import * as ReactComponents from '@sajari-dev/react-components';
-import * as ReactHooks from '@sajari-dev/react-hooks';
-import * as ReactSDK from '@sajari-dev/react-sdk';
+import * as ReactComponents from '@sajari/react-components';
+import * as ReactHooks from '@sajari/react-hooks';
+import * as ReactSDK from '@sajari/react-sdk';
 
 import {
   Box,
@@ -35,7 +35,7 @@ export const liveEditorStyle = {
 const CopyButton = (props: CodeCopyButtonProps) => <CodeCopyButton margin={['mt-4', 'mr-4']} {...props} />;
 
 // @ts-ignore
-const LiveCodePreview = props => (
+const LiveCodePreview = (props) => (
   <Box
     as={LivePreview}
     margin="mt-5"
@@ -49,7 +49,7 @@ const LiveCodePreview = props => (
 );
 
 // @ts-ignore
-const LiveCodeError = props => <LiveError className="px-3 py-2 text-white bg-red-500 text-code" {...props} />;
+const LiveCodeError = (props) => <LiveError className="px-3 py-2 text-white bg-red-500 text-code" {...props} />;
 
 const EditableNotice = () => (
   <Box

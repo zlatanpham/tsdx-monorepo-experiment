@@ -6,9 +6,9 @@
     "baseUrl": ".",
     "typeRoots": ["./node_modules/@types", "./types"],
     "paths": {
-      "@sajari-dev/react-components": ["packages/components/src"],
-      "@sajari-dev/react-hooks": ["packages/hooks/src"],
-      "@sajari-dev/react-sdk": ["packages/sdk/src"]
+      "@sajari/react-components": ["packages/components/src"],
+      "@sajari/react-hooks": ["packages/hooks/src"],
+      "@sajari/react-sdk": ["packages/sdk/src"]
     }
   }
 }

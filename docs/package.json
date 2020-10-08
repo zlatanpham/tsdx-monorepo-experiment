@@ -1,5 +1,5 @@
 {
-  "name": "@sajari-dev/sdk-docs",
+  "name": "sajari-sdk-docs",
   "version": "0.0.0",
   "private": true,
   "scripts": {
