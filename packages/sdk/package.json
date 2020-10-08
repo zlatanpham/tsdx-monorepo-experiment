@@ -10,7 +10,7 @@
     "start": "tsdx watch --tsconfig tsconfig.build.json --verbose --noClean",
     "build": "tsdx build --tsconfig tsconfig.build.json",
     "test": "jest",
-    "lint": "tsdx lint",
+    "test:ci": "jest --env=jsdom --coverage --watchAll=false --maxWorkers=2",
     "prepublish": "yarn build"
   },
   "main": "dist/index.js",
