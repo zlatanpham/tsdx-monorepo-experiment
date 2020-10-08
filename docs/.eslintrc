@@ -1,4 +1,5 @@
 {
+  // comment out because it gave a warning
   // "extends": ["@sampotts/eslint-config/react-ts"],
   "env": {
     "browser": true

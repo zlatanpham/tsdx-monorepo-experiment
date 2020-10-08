@@ -15,8 +15,11 @@ module.exports = {
       rules: {
         'import/no-extraneous-dependencies': 'off',
         'import/prefer-default-export': 'off',
+        'implicit-arrow-linebreak': 'off',
+        'function-paren-newline': 'off',
         'max-len': 'off',
         'react/prop-types': 'off',
+        'react/jsx-props-no-spreading': 'off',
         // prettier takes care
         'object-curly-newline': 'off',
         'arrow-parens': 'off',

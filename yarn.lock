@@ -2587,6 +2587,30 @@
   resolved "https://registry.yarnpkg.com/@reach/visually-hidden/-/visually-hidden-0.1.4.tgz#0dc4ecedf523004337214187db70a46183bd945b"
   integrity sha512-QHbzXjflSlCvDd6vJwdwx16mSB+vUCCQMiU/wK/CgVNPibtpEiIbisyxkpZc55DyDFNUIqP91rSUsNae+ogGDQ==
 
+"@react-aria/button@^3.2.2":
+  version "3.2.2"
+  resolved "https://registry.yarnpkg.com/@react-aria/button/-/button-3.2.2.tgz#b10c1700e6b085a48b5a2ff4ffa46feb9931c34c"
+  integrity sha512-iXJo58ST06wnh2zNpnyVgEHY8QulVGDO9LQRfBg/v3ZIIu0FAzag7dTzSijeZpppFuWM197YrFYTEouPXzhk4w==
+  dependencies:
+    "@babel/runtime" "^7.6.2"
+    "@react-aria/focus" "^3.2.2"
+    "@react-aria/i18n" "^3.1.2"
+    "@react-aria/interactions" "^3.2.1"
+    "@react-aria/utils" "^3.3.0"
+    "@react-stately/toggle" "^3.2.1"
+    "@react-types/button" "^3.2.1"
+
+"@react-aria/focus@^3.2.2":
+  version "3.2.2"
+  resolved "https://registry.yarnpkg.com/@react-aria/focus/-/focus-3.2.2.tgz#39fe763bc8b675331a8d4b1652589d3dd494a52d"
+  integrity sha512-/E1KZWjC8sUiLwf5RoJHydPY0e6bT1o9+GRtyexj+GtY77kEZpES4Pcdmd+b5ZhefAhk26AOSHnnMcDMrGxBxg==
+  dependencies:
+    "@babel/runtime" "^7.6.2"
+    "@react-aria/interactions" "^3.2.1"
+    "@react-aria/utils" "^3.3.0"
+    "@react-types/shared" "^3.2.1"
+    clsx "^1.1.1"
+
 "@react-aria/i18n@^3.1.2":
   version "3.1.2"
   resolved "https://registry.yarnpkg.com/@react-aria/i18n/-/i18n-3.1.2.tgz#a59fcd14f985aaa9047fcf3ff0d17fedfa26521e"
@@ -2597,7 +2621,7 @@
     "@react-types/shared" "^3.2.1"
     intl-messageformat "^2.2.0"
 
-"@react-aria/interactions@^3.2.0":
+"@react-aria/interactions@^3.2.0", "@react-aria/interactions@^3.2.1":
   version "3.2.1"
   resolved "https://registry.yarnpkg.com/@react-aria/interactions/-/interactions-3.2.1.tgz#ac009d553af37399b335980b390ccb727a778367"
   integrity sha512-ht78rUBzSZNYfBaEK3SzxbnP7YjZFmMJ31tUO8CqVKyl3/87qk5obmuJCUW3LsB2lgHciTYxwYZ1NjlaGRVxzg==
@@ -2635,6 +2659,30 @@
   dependencies:
     "@babel/runtime" "^7.6.2"
 
+"@react-aria/switch@^3.1.1":
+  version "3.1.1"
+  resolved "https://registry.yarnpkg.com/@react-aria/switch/-/switch-3.1.1.tgz#a67239302908426dedc383a05bf7543190bec948"
+  integrity sha512-VPuonUcZ0IFs3FAAL3cAWtZr95DH0nyzTWDgVfbfGQCz6zVcD1R6OlA0mUPEdqUl5jQamBvFIk/W/5KbtrpdQw==
+  dependencies:
+    "@babel/runtime" "^7.6.2"
+    "@react-aria/toggle" "^3.1.1"
+    "@react-stately/toggle" "^3.2.1"
+    "@react-types/switch" "^3.1.1"
+
+"@react-aria/toggle@^3.1.1":
+  version "3.1.1"
+  resolved "https://registry.yarnpkg.com/@react-aria/toggle/-/toggle-3.1.1.tgz#5a1e523af0a2425c4cd73dbeb9e9116c65ea7437"
+  integrity sha512-24UKg5dsdNRkVBF5nvcBMwZ0w1az6RGyqdHKMfyZn5vci9q5AizHTc4KhU+KC9dCpTsEDHkVn1nQ6DamzEWJWw==
+  dependencies:
+    "@babel/runtime" "^7.6.2"
+    "@react-aria/focus" "^3.2.2"
+    "@react-aria/interactions" "^3.2.1"
+    "@react-aria/utils" "^3.3.0"
+    "@react-stately/toggle" "^3.2.1"
+    "@react-types/checkbox" "^3.2.1"
+    "@react-types/shared" "^3.2.1"
+    "@react-types/switch" "^3.1.1"
+
 "@react-aria/utils@^3.3.0":
   version "3.3.0"
   resolved "https://registry.yarnpkg.com/@react-aria/utils/-/utils-3.3.0.tgz#8d5d026ce93e25839b4bc61d40839afaf15fd04d"
@@ -2644,6 +2692,37 @@
     "@react-aria/ssr" "^3.0.1"
     "@react-types/shared" "^3.2.1"
     clsx "^1.1.1"
+
+"@react-stately/toggle@^3.2.1":
+  version "3.2.1"
+  resolved "https://registry.yarnpkg.com/@react-stately/toggle/-/toggle-3.2.1.tgz#8b10b5eb99c3c4df2c36d17a5f23b77773ed7722"
+  integrity sha512-gZVuJ8OYoATUoXzdprsyx6O1w3wCrN+J0KnjhrjjKTrBG68n3pZH0p6dM0XpsaCzlSv0UgNa4fhHS3dYfr/ovw==
+  dependencies:
+    "@babel/runtime" "^7.6.2"
+    "@react-stately/utils" "^3.1.1"
+    "@react-types/checkbox" "^3.2.1"
+    "@react-types/shared" "^3.2.1"
+
+"@react-stately/utils@^3.1.1":
+  version "3.1.1"
+  resolved "https://registry.yarnpkg.com/@react-stately/utils/-/utils-3.1.1.tgz#e2f2c3ef81cfc6850a3418cb0f050c33d123620a"
+  integrity sha512-htG4TicI4SKxfD5sEKYGxlMeQ5/+TuWPtnhRMbRqdmqnfkVxO/PoaQeEF+xUMWM9VCZc69ZFH6Qen1eZ/JfFcQ==
+  dependencies:
+    "@babel/runtime" "^7.6.2"
+
+"@react-types/button@^3.2.1":
+  version "3.2.1"
+  resolved "https://registry.yarnpkg.com/@react-types/button/-/button-3.2.1.tgz#47170f8d7107115380dfd54ee3f699d3bef121de"
+  integrity sha512-k4pyQ01Unkr+Jx5tGESSsbqDXID7s/sEXZbrT+JPx/3Ot4Du86mGjlDIOChd7Iq1koGBirJuGY8X5nk4zCUvdg==
+  dependencies:
+    "@react-types/shared" "^3.2.1"
+
+"@react-types/checkbox@^3.2.1":
+  version "3.2.1"
+  resolved "https://registry.yarnpkg.com/@react-types/checkbox/-/checkbox-3.2.1.tgz#971dfd8428e43ce34b063388d1c742bbba0a8dc6"
+  integrity sha512-nm/j8JQWAayFEvs5Hicf9/DBrdnc/CwbXQtN3dC+ehERFu9BtxP6Bt6p7qmhvAJtuUnTh85+zY148BITiyQYtQ==
+  dependencies:
+    "@react-types/shared" "^3.2.1"
 
 "@react-types/label@^3.2.1":
   version "3.2.1"
@@ -2663,6 +2742,14 @@
   version "3.2.1"
   resolved "https://registry.yarnpkg.com/@react-types/shared/-/shared-3.2.1.tgz#cbcffec02a7592f019916e4bd0807950a1376bcf"
   integrity sha512-Yi+zB+wvIGrxomjG7JZWsOPm8/tKPBtEsJI4cS2QbSho/bQWsw6xufJ6YlXxmx4BiBcktkp5VeP43E5nWqMQ5w==
+
+"@react-types/switch@^3.1.1":
+  version "3.1.1"
+  resolved "https://registry.yarnpkg.com/@react-types/switch/-/switch-3.1.1.tgz#7909a8f7c2cb68ab7536efd03af3be3417e0eca3"
+  integrity sha512-nI5J/1CrJrVANwgikXyPMqxWJ4UyefzE4Vz/TwTgoXQ9v+LRNo22wbisfh1EmJAlZ0E52X/iKViVaBroNty+EA==
+  dependencies:
+    "@react-types/checkbox" "^3.2.1"
+    "@react-types/shared" "^3.2.1"
 
 "@rollup/plugin-commonjs@^11.0.0":
   version "11.1.0"

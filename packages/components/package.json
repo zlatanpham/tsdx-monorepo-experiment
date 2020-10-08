@@ -21,12 +21,12 @@
     "dist"
   ],
   "peerDependencies": {
-    "react": "^16.8.0",
-    "react-dom": "^16.8.0",
-    "emotion-theming": "> 10",
     "@emotion/core": "> 10",
     "@emotion/styled": "> 10",
-    "@tailwindcss/ui": "^0.6.2"
+    "@tailwindcss/ui": "^0.6.2",
+    "emotion-theming": "> 10",
+    "react": "^16.8.0",
+    "react-dom": "^16.8.0"
   },
   "devDependencies": {
     "@emotion/core": "^10.0.10",
@@ -36,6 +36,10 @@
     "twin.macro": "^1.9.0"
   },
   "dependencies": {
+    "@reach/auto-id": "^0.11.2",
+    "@react-aria/button": "^3.2.2",
+    "@react-aria/switch": "^3.1.1",
+    "@react-types/button": "^3.2.1",
     "tslib": "^2.0.0"
   },
   "publishConfig": {
