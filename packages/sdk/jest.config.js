@@ -4,7 +4,7 @@ const base = require('../../jest.config.base.js');
 module.exports = {
   ...base,
   rootDir: '../..',
-  testMatch: [`<rootDir>/packages/sdk/**/*.test.ts`, `<rootDir>/packages/sdk/**/*.test.tsx`],
+  testMatch: ['<rootDir>/packages/sdk/**/*.test.ts', '<rootDir>/packages/sdk/**/*.test.tsx'],
   name: '@sajari-dev/react-sdk',
   displayName: 'sdk',
 };

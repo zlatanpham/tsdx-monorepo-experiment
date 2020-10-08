@@ -1,3 +1,4 @@
+/* eslint-disable no-param-reassign */
 import { isObject } from './assersion';
 
 interface MergeObject {
@@ -16,7 +17,7 @@ export const merge = (target: MergeObject, source: MergeObject) => {
     if (Array.isArray(targetValue) && Array.isArray(sourceValue)) {
       target[key] = targetValue.concat(sourceValue);
     } else if (isObject(targetValue) && isObject(sourceValue)) {
-      target[key] = merge(Object.assign({}, targetValue), sourceValue);
+      target[key] = merge({ ...targetValue }, sourceValue);
     } else {
       target[key] = sourceValue;
     }

@@ -10,6 +10,15 @@
     "@types/jest": "^26.0.14",
     "@types/react": "^16.9.43",
     "@types/react-dom": "^16.9.8",
+    "@typescript-eslint/eslint-plugin": "^4.4.0",
+    "babel-jest": "^26.5.2",
+    "eslint": "^7.2.0",
+    "eslint-config-airbnb": "^18.2.0",
+    "eslint-config-airbnb-typescript": "^11.0.0",
+    "eslint-plugin-import": "^2.22.1",
+    "eslint-plugin-jsx-a11y": "^6.3.1",
+    "eslint-plugin-react": "^7.21.3",
+    "eslint-plugin-react-hooks": "^4.0.0",
     "jest": "^26.5.0",
     "lerna": "^3.15.0",
     "react": "^16.13.1",
@@ -28,7 +37,9 @@
     "build": "lerna run build --scope={@sajari-dev/react-components,@sajari-dev/react-hooks,@sajari-dev/react-sdk}",
     "prepublish": "lerna run prepublish",
     "docs": "lerna exec --scope=@sajari-dev/sdk-docs -- yarn dev",
-    "format": "prettier -c --write \"*/**\""
+    "format": "prettier -c --write \"*/**\"",
+    "lint": "eslint .",
+    "lint:fix": "eslint --fix ."
   },
   "husky": {
     "hooks": {

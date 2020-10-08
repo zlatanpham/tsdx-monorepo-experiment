@@ -1,3 +1,5 @@
+const tailwindUI = require('@tailwindcss/ui');
+
 module.exports = {
   future: {
     // removeDeprecatedGapUtilities: true,
@@ -8,5 +10,5 @@ module.exports = {
     extend: {},
   },
   variants: {},
-  plugins: [require('@tailwindcss/ui')],
+  plugins: [tailwindUI],
 };

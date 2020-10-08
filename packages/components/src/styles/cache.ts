@@ -27,7 +27,7 @@ const cache = createCache({
         return content;
     }
   },
-  prefix: key => !disablePrefix.includes(key),
+  prefix: (key) => !disablePrefix.includes(key),
 });
 
 export default cache;

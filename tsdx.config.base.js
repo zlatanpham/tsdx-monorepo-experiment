@@ -1,3 +1,4 @@
+/* eslint-disable no-param-reassign */
 module.exports = {
   rollup(config, opts) {
     if (opts.format === 'esm') {

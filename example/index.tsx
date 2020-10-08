@@ -3,7 +3,7 @@ import * as React from 'react';
 import * as ReactDOM from 'react-dom';
 import { InputComposition, ContextProvider } from '@sajari-dev/react-sdk';
 
-const App = () => {
+var App = () => {
   return (
     <ContextProvider>
       <InputComposition />

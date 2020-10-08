@@ -10,7 +10,7 @@
     "start": "tsdx watch --tsconfig tsconfig.build.json --tsdxconfig --verbose --noClean",
     "build": "tsdx build --tsconfig tsconfig.build.json",
     "test": "jest",
-    "lint": "tsdx lint",
+    "lint": "eslint .",
     "prepublish": "yarn build"
   },
   "main": "dist/index.js",
@@ -25,15 +25,15 @@
     "react-dom": "^16.8.0",
     "emotion-theming": "> 10",
     "@emotion/core": "> 10",
-    "@emotion/styled": "> 10"
+    "@emotion/styled": "> 10",
+    "@tailwindcss/ui": "^0.6.2"
   },
   "devDependencies": {
-    "twin.macro": "^1.9.0",
-    "@tailwindcss/ui": "^0.6.2",
-    "tailwindcss": "^1.8.10",
-    "emotion-theming": "^10.0.10",
     "@emotion/core": "^10.0.10",
-    "@emotion/styled": "^10.0.10"
+    "@emotion/styled": "^10.0.10",
+    "emotion-theming": "^10.0.10",
+    "tailwindcss": "^1.8.10",
+    "twin.macro": "^1.9.0"
   },
   "dependencies": {
     "tslib": "^2.0.0"

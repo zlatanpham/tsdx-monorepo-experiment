@@ -7,8 +7,12 @@ const InputComposition = () => {
 
   return (
     <>
-      <Input value={query} onChange={setQuery} /> <br />
-      Value: {query}
+      <Input value={query} onChange={setQuery} />
+      {' '}
+      <br />
+      Value:
+      {' '}
+      {query}
     </>
   );
 };

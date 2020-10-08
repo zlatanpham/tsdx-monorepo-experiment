@@ -1,3 +1,4 @@
+/* eslint-disable global-require */
 const remarkPlugins = [
   require('remark-autolink-headings'),
   require('remark-emoji'),
